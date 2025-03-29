@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  max-height: fit-content;
+  min-height: 1000px;
+  background-color: #f3f9fe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Footer{
+  padding: 10px 10px;
+
+  background-color: #030f1b;
+  color: #f3f9fe;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.Loading{
+
+  height: 80%;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Loading h1{
+  font-size: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Loading h3{
+  font-size: 3.5em;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+

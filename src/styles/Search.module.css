@@ -1,0 +1,38 @@
+.Search{
+
+
+
+    height: 30px;
+    width: fit-content;
+
+    border-radius: 30px;
+
+    /* center it */
+    margin: 50px auto;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 5px;
+    background-color: #030f1b;
+}
+
+.Search > * {
+    height: 100%;
+}
+
+.searchInput{
+    font-size: 1.3em;
+    border-radius: 30px;
+
+}
+
+.Search button{
+    background-color: unset;
+    border: unset;
+    color: #f3f9fe;
+
+    font-size: 1.3em;
+}
+
+

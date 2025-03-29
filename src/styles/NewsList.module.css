@@ -1,0 +1,169 @@
+.NewsList{
+    margin-top: 60px;
+}
+
+
+
+
+.NewsContainer{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(1, 3));
+    
+    /* display: flex; */
+    /* justify-content: center; */
+    gap: 50px 120px;
+
+    /* min-width: fit-content; */
+    /* max-width: 1210px; */
+    width: fit-content;
+    flex-wrap: wrap;
+    margin: 40px auto;
+
+    
+}
+
+
+.News{
+    /* border: 1px solid black; */
+    width: 280px;
+}
+
+
+.LATEST{
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.newsBanner{
+    /* border: 1px solid black; */
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.newsBanner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.newsInformation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+
+    margin: 10px;
+}
+
+.newsMetaInfo{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.newsCountry{
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.newsTitle{
+    /* border: 1px solid black; */
+    max-width: 100%;
+    height: 3ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+
+    
+}
+
+.newsTitle a{
+    text-decoration: none;
+    color: black;
+
+    transition: .2s;
+}
+
+.newsTitle a:hover{
+    color: #cc1b1b;
+}
+
+
+.newsCountry{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+.newsDescription{
+    /* text-align: justify; */
+
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    font-size: .8em;
+}
+
+
+.sourceContainer{
+    display: flex;
+    text-align: center;
+    padding: 3px 0;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    /* text-align: left; */
+
+}
+
+.sourceContainer img{
+    height: 30px;
+    width: 30px;
+}
+
+.sourceInfo a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.sourceInfo a:hover{
+    color: #cc1b1b;
+    font-weight: 500;
+
+    /* transform: scaleX(1.1); */
+}
+
+
+@media screen and (max-width:900px) {
+    .NewsContainer{
+        grid-template-columns: auto auto;
+
+    }
+}
+
+@media screen and (max-width:650px) {
+    .NewsContainer{
+        grid-template-columns: auto;
+
+    }
+}
