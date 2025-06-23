@@ -38,7 +38,6 @@ function App() {
       
 
       <Navigation/>
-      <img src='logo.png' alt='test'/>
       <Search setQuery={setQuery}/>
 
       {loading? <Loading/>: <NewsList newsData={newsData}/> }

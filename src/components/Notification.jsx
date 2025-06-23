@@ -12,6 +12,7 @@ const Notification = ({notifMessage, setShowNotif}) =>{
                     setShowNotif(false)
                 }}>❌</span>
             </p>
+            
 
         </div>
     )

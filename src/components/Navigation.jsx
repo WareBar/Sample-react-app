@@ -10,6 +10,8 @@ const Navigation = () => {
         <div className={styles.Navigation}>
             <h1>NEWS</h1>
 
+
+
             <div className={styles.socialsContainer}>
                 <a title='Facebook' target='blank' href="https://www.facebook.com/raedus.lafivad">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/2048px-Facebook_icon_%28black%29.svg.png" alt="facebook" />
