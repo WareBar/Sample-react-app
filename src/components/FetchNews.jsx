@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-const FetchNews = ({API, setNewsData, query, setLoading}) => {
+const FetchNews = ({API, setNewsData, query, setLoading, showNotif, setShowNotif, notifMessage, setNotifMessage}) => {
     console.log("this is fetch news component")
 
     useEffect(()=>{
@@ -12,7 +12,10 @@ const FetchNews = ({API, setNewsData, query, setLoading}) => {
 
 
             if (fetchInfo.status !== 'success'){
-                alert(fetchInfo.message)
+                // alert(fetchInfo.message)
+                console.log(fetchInfo)
+                setNotifMessage(fetchInfo.results.message.split())
+                setShowNotif(!showNotif)
             }
             else{
                 console.log(fetchInfo)
